@@ -1,2 +1,7 @@
-# 9TH-CLASS-CHATBOT
-THIS IS A CHATBOT HELPFULL FOR THE STUDENTS STUDYING IN CLASS 9TH AS IT CAN HELP THEM TO ANSWER THEIR DOUBTS
+Chatbot Website
+This is a simple website with a chatbot integrated using SendBird.
+
+Project Overview
+A chatbot is integrated to allow users to interact with the website.
+It uses SendBird to handle the chat functionality.
+The project is hosted on GitHub Pages.
