@@ -1,0 +1,128 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body and Background */
+body {
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Container for centered content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Navigation Bar Styling */
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    color: #4CAF50;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Chatbot Section */
+.chatbot {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.widget {
+    background-color: #fff;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.widget p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .widget {
+        width: 80%;
+    }
+}
