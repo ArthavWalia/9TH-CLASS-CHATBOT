@@ -1,128 +1,108 @@
-/* General Reset */
-* {
+/* Resetting some default styles */
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    height: 100%;
+    background-color: #f4f4f9;
 }
 
-/* Body and Background */
-body {
-    background-color: #f4f7fc;
-    color: #333;
-    line-height: 1.6;
-    font-size: 16px;
-}
-
-/* Container for centered content */
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-/* Header Styling */
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5rem;
-}
-
-/* Navigation Bar Styling */
-nav ul {
-    list-style: none;
-    text-align: center;
-    margin-top: 10px;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    font-size: 1.1rem;
-}
-
-nav ul li a:hover {
-    color: #FFD700;
-}
-
-/* Hero Section */
-.hero {
+/* Container for the chatbot */
+.chatbot-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
     background-color: #fff;
-    padding: 50px 0;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 30px;
 }
 
-.hero h2 {
-    font-size: 2rem;
-    color: #4CAF50;
-}
-
-.hero p {
-    font-size: 1.1rem;
-    color: #555;
-}
-
-/* Chatbot Section */
-.chatbot {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.widget {
-    background-color: #fff;
-    border: 2px solid #4CAF50;
-    border-radius: 10px;
+/* Header with chatbot name and avatar */
+.chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3f72af;
     padding: 20px;
-    width: 300px;
-    margin: 0 auto;
+    width: 100%;
 }
 
-.widget p {
-    font-size: 1.1rem;
-    color: #333;
+.chat-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
 }
 
-/* Footer Styling */
-footer {
-    background-color: #4CAF50;
+.chat-header h2 {
     color: white;
-    text-align: center;
+    margin: 0;
+}
+
+/* Chat window styling */
+.chat-window {
+    width: 100%;
+    max-width: 800px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border-top: 5px solid #3f72af;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+/* Chat output (messages display area) */
+.chat-output {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.bot-message {
+    background-color: #dbe5ff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 80%;
+}
+
+.user-message {
+    background-color: #dfffd6;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 80%;
+    align-self: flex-end;
+}
+
+/* Input area for sending messages */
+.chat-input-area {
+    display: flex;
     padding: 15px;
-    margin-top: 50px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ddd;
 }
 
-footer p {
-    font-size: 1rem;
+.chat-input-area input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
 }
 
-/* Media Queries for responsiveness */
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
-
-    header h1 {
-        font-size: 2rem;
-    }
-
-    .hero h2 {
-        font-size: 1.8rem;
-    }
-
-    .widget {
-        width: 80%;
-    }
+.chat-input-area button {
+    background-color: #3f72af;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 20px;
+    cursor: pointer;
 }
+
+.chat-input-area button:hover {
+    background-color: #345f91;
+}
+
